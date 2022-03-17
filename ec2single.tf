@@ -11,13 +11,13 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "us-west-22"
+  region  = "us-west-27"
 }
 
  #text
  
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-830c94e2"
   instance_type = "t2.micro"
   ingress_cidr_blocks = ["0.0.0.0/16"]
   tags = {
