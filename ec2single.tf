@@ -13,8 +13,6 @@ provider "aws" {
   profile = "default"
   region  = "us-west-22"
 }
-
- #text
  
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
